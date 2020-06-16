@@ -22,6 +22,7 @@ bool find(int* matrix, int rows, int columns, int number)
     return false;
 }
 
+/*
 int main()
 {
     int matrix[16] = { 1, 2, 8, 9, 2, 4, 9, 12, 4, 7, 10, 13, 6, 8, 11, 15 };
@@ -34,3 +35,4 @@ int main()
     std::cout << "isFound14: " << isFound14 << std::endl;
     std::cout << "isFound15: " << isFound15 << std::endl;
 }
+*/

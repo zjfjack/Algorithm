@@ -49,6 +49,7 @@ void replaceSpace(char string[], int length)
     }
 }
 
+/*
 int main()
 {
     char string1[50] = "We are happy.";
@@ -61,3 +62,4 @@ int main()
     std::cout << string2 << std::endl;
     std::cout << string3 << std::endl;
 }
+*/
