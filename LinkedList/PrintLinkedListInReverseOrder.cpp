@@ -1,20 +1,11 @@
 #include <iostream>
 #include <stack>
-#include "ListNode.h"
-
-extern void reverseLinkedList(ListNode** head);
+#include "ListNode.hpp"
 
 void printLinkedListReverseMutable(ListNode** head)
 {
-    reverseLinkedList(head);
-
-    ListNode* node = *head;
-    while (node)
-    {
-        std::cout << node->val;
-        node = node->next;
-    }
-    std::cout << std::endl;
+    ListNode::reverseLinkedList(head);
+    ListNode::printLinkedList(*head);
 }
 
 void printLinkedListReverseImmutableStack(ListNode* head)
@@ -42,12 +33,12 @@ void printLinkedListReverseImmutableRecursive(ListNode* head)
     std::cout << head->val;
 }
 
-int main()
-{
-    ListNode* list1 = new ListNode(1, new ListNode(2, new ListNode(3, nullptr)));
-    printLinkedListReverseMutable(&list1);
-
-    ListNode* list2 = new ListNode(1, new ListNode(2, new ListNode(3, nullptr)));
-    printLinkedListReverseImmutableStack(list2);
-    printLinkedListReverseImmutableRecursive(list2);
-}
+//int main()
+//{
+//    ListNode* list1 = new ListNode(1, new ListNode(2, new ListNode(3, nullptr)));
+//    printLinkedListReverseMutable(&list1);
+//
+//    ListNode* list2 = new ListNode(1, new ListNode(2, new ListNode(3, nullptr)));
+//    printLinkedListReverseImmutableStack(list2);
+//    printLinkedListReverseImmutableRecursive(list2);
+//}
