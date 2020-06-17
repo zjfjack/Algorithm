@@ -32,19 +32,19 @@ void DeleteNodeInLinkedList(ListNode** head, ListNode* node)
     }
 }
 
-int main()
-{
-    ListNode* deleteMidNode = new ListNode(2, new ListNode(3, nullptr));
-    ListNode* headNode1 = new ListNode(1, deleteMidNode);
-    DeleteNodeInLinkedList(&headNode1, deleteMidNode);
-    ListNode::printLinkedList(headNode1);
-
-    ListNode* deleteOnlyHeadNode = new ListNode(1, nullptr);
-    DeleteNodeInLinkedList(&deleteOnlyHeadNode, deleteOnlyHeadNode);
-    ListNode::printLinkedList(deleteOnlyHeadNode);
-
-    ListNode* deleteTailNode = new ListNode(3, nullptr);
-    ListNode* headNode2 = new ListNode(1, deleteTailNode);
-    DeleteNodeInLinkedList(&headNode2, deleteTailNode);
-    ListNode::printLinkedList(headNode2);
-}
+//int main()
+//{
+//    ListNode* deleteMidNode = new ListNode(2, new ListNode(3, nullptr));
+//    ListNode* headNode1 = new ListNode(1, deleteMidNode);
+//    DeleteNodeInLinkedList(&headNode1, deleteMidNode);
+//    ListNode::printLinkedList(headNode1);
+//
+//    ListNode* deleteOnlyHeadNode = new ListNode(1, nullptr);
+//    DeleteNodeInLinkedList(&deleteOnlyHeadNode, deleteOnlyHeadNode);
+//    ListNode::printLinkedList(deleteOnlyHeadNode);
+//
+//    ListNode* deleteTailNode = new ListNode(3, nullptr);
+//    ListNode* headNode2 = new ListNode(1, deleteTailNode);
+//    DeleteNodeInLinkedList(&headNode2, deleteTailNode);
+//    ListNode::printLinkedList(headNode2);
+//}
