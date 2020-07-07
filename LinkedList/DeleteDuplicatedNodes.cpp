@@ -35,10 +35,10 @@ void deleteDuplicatedNodes(ListNode** head)
     }
 }
 
-int main()
-{
-    int array[] = { 1, 1, 2, 3, 4, 5, 6, 6 };
-    ListNode* head = new ListNode(array, std::end(array));
-    deleteDuplicatedNodes(&head);
-    ListNode::printLinkedList(head);
-}
+//int main()
+//{
+//    int array[] = { 1, 1, 2, 3, 4, 5, 6, 6 };
+//    ListNode* head = new ListNode(array, std::end(array));
+//    deleteDuplicatedNodes(&head);
+//    ListNode::printLinkedList(head);
+//}
